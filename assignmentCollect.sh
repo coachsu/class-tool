@@ -22,6 +22,7 @@ fi
 # Step 2. Collect assignment per student
 echo ">> ASSIGNMENT REPORT FOR [$name]" > $destdir/log
 echo ">> DEADLINE: $dead" | tee -a $destdir/log
+echo ">> LAST UPDATE: " $(date +"%Y-%m-%d") >> $destdir/log
 echo "" >> $destdir/log
 count=0
 submit=0
